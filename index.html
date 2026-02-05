@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Romantikstadt Steyr</title>
+<style>
+        /* CSS-Vorgaben laut Arbeitsauftrag */
+        body {
+            background-color: #E3E3E3;
+            font-family: "Bahnschrift", sans-serif;
+            margin: 0;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s; /* Sanfter Übergang */
+        }
+ 
+        nav {
+            background-color: #007baf;
+            padding: 10px; /* Etwas Padding für den Button */
+            font-family: "Bahnschrift", sans-serif;
+            display: flex; /* Flexbox für die Ausrichtung */
+            justify-content: space-between; /* Links Text, rechts Button */
+            align-items: center;
+        }
+ 
+        nav a {
+            color: #ffffff;
+            background-color: #007baf;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+ 
+        h1, h2 {
+            font-family: "Calisto MT", serif;
+            color: #007baf;
+            margin-left: 5px;
+        }
+ 
+        h1 { font-size: 32px; }
+        h2 { font-size: 22px; }
+ 
+        img { margin: 5px; }
+        p { margin-left: 5px;
+            margin-right: 5px;}
+
+        /* --- DARK MODE STYLES --- */
+        body.dark-mode {
+            background-color: #1a1a1a; /* Dunkler Hintergrund */
+            color: #f0f0f0;            /* Heller Text */
+        }
+
+        /* Anpassung der Überschriften und Texte im Darkmode */
+        .dark-mode h1, .dark-mode h2, .dark-mode p#welcome-text {
+            color: #4db8ff !important; /* Etwas helleres Blau für bessere Lesbarkeit */
+        }
+
+        .dark-mode p {
+            color: #dddddd !important;
+        }
+
+        /* Style für den Button */
+        #dark-mode-btn {
+            background-color: #ffffff;
+            color: #007baf;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: "Bahnschrift", sans-serif;
+        }
+
+        #dark-mode-btn:hover {
+            background-color: #e3e3e3;
+        }
+
+</style>
+</head>
+<body id="top">
+ 
+    <header>
+        <img src="logo steyr ohne hintergrund.png" alt="Logo Steyr" style="float: right;" height="40">
+        <h1 style="text-align: left;">Willkommen in Steyr</h1> 
+    </header>
+ 
+    <nav>
+        <div>  
+            <a href="https://www.steyr-nationalpark.at/orte/region/gastronomie-steyr.html">Gastronomie</a> | 
+            <a href="https://www.steyr-nationalpark.at/orte/region/unterkuenfte-steyr.html">Unterkünfte</a> | 
+            <a href="https://www.steyr-nationalpark.at/advent.html">Advent in Steyr</a> | 
+            <a href="https://www.steyr-nationalpark.at/orte/region/steyr-am-fluss-der-zeit/oesterreich-angebot/detail/7720/steyrer-augenblicke.html">Steyr Moments</a>
+        </div>
+        <button id="dark-mode-btn">Dark Mode</button>
+    </nav>
+ 
+    <main>
+        <h2 style="text-align: left;">Steyr am Nationalpark – natürlich romantisch!</h2>
+        <p id="main-para" style="text-align: justify; color: grey;">
+            Steyr am Nationalpark, reich an Kultur, Industrie, Natur und Architektur ist eine lebens- und liebenswerte Kleinstadt. Die 1000-jährige Stadt liegt inmitten der Österreichischen Romantikstraße zwischen Salzburg und Wien und ist ein wahres Architekturjuwel. Am historischen Stadtplatz reihen sich Bürgerhäuser aus verschiedenen Stilepochen harmonisch aneinander. Malerisch ist der Zusammenfluss von Enns und Steyr unterhalb des Schlosses, die beiden Flüsse bestimmen seit Jahrhunderten die Entwicklung der Stadt. Erleben Sie das besondere Flair der Stadt Steyr und überzeugen Sie sich selbst von der harmonischen Symbiose zwischen traditionsreicher Vergangenheit und pulsierender Gegenwart!
+        </p>
+ 
+        <div style="text-align: center;">
+            <img src="zweifluesseestadt.jpg" height="185" width="350" alt="Zwei Flüsse Stadt">
+            <img src="stadtplatz.jpg" height="185" width="350" alt="Panoramalift">
+            <img src="panoramalift.jpg" height="185" width="350" alt="Nationalpark">
+        </div>
+ 
+        <h2 style="text-align: left;">In Steyr ist immer was los - entscheiden Sie sich für eine dieser Aktivitäten:</h2>
+ 
+        <ul style="text-align: left; color: black" id="activity-list">
+            <li><strong>Vom höchsten Turm in den tiefsten Keller:</strong><br> Begleiten Sie die Steyrer Nachtwächter auf Zeitreise in die Vergangenheit und lauschen Sie ihren Gschichtln und Anekdoten!</li>
+            <li><strong>Steyr erschweben:</strong><br> Der Sprung vom Mittelalter ins Hightech-Zeitalter gelingt in Steyr mühelos beim lautlosen Schweben auf den Segways, den ultimativen Kult-Rollern!</li>
+            <li><strong>Ein Eldorado für Naturliebhaber:</strong><br> In nur 30 Autominuten erreicht man das Besucherzentrum Ennstal, den idealen Ausgangspunkt für alle Touren in den Nationalpark Kalkalpen.</li>
+            <li><strong>Advent in Steyr:</strong><br> In der Adventzeit verwandelt sich Steyr zu Österreichs offizieller Christkindlstadt. Das Postamt und die Wallfahrtskirche in Christkindl, das Steyrer Kripperl oder das Weihnachtsmuseum mit Erlebnisbahn sind nur einige der vorweihnachtlichen Attraktionen.</li>
+        </ul>
+ 
+        <div style="text-align: center;">
+            <img src="nationalpark kalkalpen.jpg" height="185" width="350" alt="Wandern">
+            <img src="nachtwaechter.jpg" height="185" width="350" alt="Nachtwächter">
+            <img src="christkindl.jpg" height="185" width="350" alt="Christkindl">
+        </div>
+ 
+        <p id="welcome-text" style="text-align: center; font-size: 22px; color: #007baf;">
+            <strong>Es gibt viel zu entdecken bei uns, wir freuen uns auf Ihren Besuch!</strong>
+        </p>
+ 
+        <div style="text-align: right;">
+            <a href="#top"><img src="pfeil.png" alt="Nach oben" height="30"></a>
+        </div>
+    </main>
+
+    <script>
+        // JavaScript Logik für den Dark Mode
+        const btn = document.getElementById('dark-mode-btn');
+        const body = document.body;
+        const list = document.getElementById('activity-list');
+
+        btn.addEventListener('click', () => {
+            // Klasse "dark-mode" am body hinzufügen oder entfernen
+            body.classList.toggle('dark-mode');
+            
+            // Textfarbe der Liste anpassen (da sie im HTML hart auf "black" gesetzt ist)
+            if (body.classList.contains('dark-mode')) {
+                list.style.color = "white";
+                btn.textContent = "Light Mode";
+            } else {
+                list.style.color = "black";
+                btn.textContent = "Dark Mode";
+            }
+        });
+    </script>
+ 
+</body>
+</html>
